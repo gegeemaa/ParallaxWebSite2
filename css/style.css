@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.image_first {
+    height: 750px;
+    width: 100%;
+    z-index: 1;
+    }
+.image {
+    height: 350px;
+    width: 100%;
+    z-index: 1;
+    }
+
+#nav {
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,1);
+    -webkit-box-shadow: 0px 0px 20px rgba(44,44,44,.3);
+    top:0;
+    left:0;
+    height: 50px;
+    z-index: 100;
+}
+
+#nav #logo {
+    height: 40px;
+    width: 170px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto 100px;
+}
+
+#nav #logo img {
+    height: 100%;
+    width: 100%;
+    
+}
+.content {
+    height: 400px;
+    width:100%;
+    background: white;
+    z-index: 2;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.content h1 {
+    font-size: 20px;
+    color: #464646;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin: 30px 60px;
+    text-align: center;
+}
+/*h1::first-letter {
+    font-size: 30px;
+    font-weight: 600;
+    color:#3cb0f8;
+}*/
+.content p {
+    font-size: 15px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 30px 30px;
+    line-height: 1.5;
+    text-align: center;
+}
+article {
+ -webkit-flex-grow: 1;
+          flex-grow: 1;
+  -webkit-flex-shrink: 1;
+          flex-shrink: 1;
+  width: 300px;
+  /*width: 30.3030%;*/
+  margin-right: 10px;
+  padding: 10px;
+  background: white;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  }
+  .content ul {
+    padding-left: 80px;
+  }
+  .content li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    /*list-style: none;*/
+    font-size: 15px;
+    color: #343434;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    /*text-align: center;*/
+      }
+
+#wall_1 {
+    background: url(../Images/nature_mon5.jpg) ;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#wall_2 {
+    background: url(../Images/nature_mon2.jpg);
+    background-attachment: fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#wall_3 {
+    background: url(../Images/nature_mon3.jpg);
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.centered1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        /* bring your own prefixes */
+        transform: translate(-50%, -50%);
+         text-align: center;
+        font-family: Raleway, Sans-serif;
+        font-size: 1.5em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 2em;  
+        color: #fff;
+}
+.centered2 {
+        position: relative;
+        text-align: center;
+        /* bring your own prefixes */
+        display: table;
+        text-align: center;
+        font-family: Raleway, Sans-serif;
+        font-size: 1.5em;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: normal;
+        line-height: 2em;  
+        color: #fff;
+        top: 50%;
+        left: 50%;
+}
+.centered2 h1 {
+        margin: 0 auto;
+        vertical-align: middle; 
+        display: table-cell;
+
+}
