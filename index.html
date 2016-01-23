@@ -16,13 +16,19 @@
     
 </head>
 <body>
-   <div id="nav">
-       <div id="logo"><img src="Images/mon_letters.jpg"></div>
-   </div>
+    <nav class="nav fixed-nav-bar">
+      <ul>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    
     <div id="wall_1" class="image_first" data-stellar-background-ratio="0.4" >
-      <div class="centered1" data-stellar-background-ratio="0.6">        
+      <div class="centered1" data-stellar-background-ratio="0.5">        
             <h1>We build beautifully simple business websites that you can maintain.</h1>
-            <br>
+            <br>  
             <br>
             <h3>We'll scoop you up real good ball of ice.</h3>                 
       </div>
@@ -38,8 +44,7 @@
             <h1>Компаний үйл ажиллагаа</h1>
             <p> Тус компани нь програм хангамжийн хөгжүүлэлт, сургалт, зөвлөгөө, электрон мэдээллийн сангийн чиглэлээр үйл ажиллагаагаа явуулж байна. Мөн Японы зах зээлээс аутсорсингийн програм хангамжийн хөгжүүлэлтийн захиалга аван ажилладаг.</p>
             <p> Компаний ахлах инженерүүд Японы зах зээлд гарч ажиллан хэд хэдэн төсөлд оролцож, аутсорсингийн төслийн баг удирдан ажиллаж байсан дадлага туршлагатай. </p>
-        </article>
-        
+        </article>   
         <article>
             <h1>Компаний хүний нөөц</h1>
             <p> Мэдээллийн технологи болон бусад чиглэлээр олон улсад үнэлэгдэх сертификат авсан ажилчдын тоог доор харуулав.</p>
@@ -55,7 +60,7 @@
     </div>
 
     <div id="wall_2" class="image" data-stellar-background-ratio="0.4">
-        <div class="centered2" data-stellar-background-ratio="0.6">        
+        <div class="centered2" data-stellar-background-ratio="0.5">        
             <h1> ҮЙЛЧИЛГЭЭ </h1>                       
         </div>
     </div>
@@ -99,7 +104,7 @@ Eclipse, NetBeans, Visual Studio.Net, JDeveloper, JUnit, NUnit </p>
         </article>   
     </div>
     <div id="wall_3" class="image" data-stellar-background-ratio="0.4">
-        <div class="centered2" data-stellar-background-ratio="0.6">        
+        <div class="centered2" data-stellar-background-ratio="0.5">        
             <h1> БҮТЭЭГДЭХҮҮН </h1>                       
         </div>
     </div>
@@ -117,21 +122,49 @@ Eclipse, NetBeans, Visual Studio.Net, JDeveloper, JUnit, NUnit </p>
         </article>
     </div>
     
-    <div id="wall_3" class="image" data-stellar-background-ratio="0.4">
-        <div class="centered2" data-stellar-background-ratio="0.6">        
+    <!-- <div id="wall_3" class="image" data-stellar-background-ratio="0.4">
+        <div class="centered2" data-stellar-background-ratio="0.5">        
             <h1> ХОЛБОО БАРИХ </h1>                       
         </div>
-    </div>
+    </div> -->
 
-    <div id="content_1" class="content">
-        <article>
-   
-            <p> Хаяг: Улаанбаатар хот, Баянзүрх дүүрэг, 6-р хороо, 13-р хороолол </p>
-            <p>Утас: (+976) 9666 ...</p>
-            <p> Веб: www.qualsmart.com </p>
-            <p> Имейл: qualsmart@gmail.com</p>
-        </article>
+    <div id="contact" class="content">
+        <h1> Холбоо барих </h1>   
+        <ul>
+            <li> Хаяг: Улаанбаатар хот, Баянзүрх дүүрэг, 6-р хороо, 13-р хороолол </li>
+            <li>Утас: (+976) 9666 ...</li>
+            <li> Веб: www.qualsmart.com </li>
+            <li> Имейл: qualsmart@gmail.com</li>
+        </ul>
     </div>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script>
+    
+        var  mn = $(".nav");
+        mns = "main-nav-scrolled";
+        hdr = $('header').height();
+
+    $(document).ready(function(){
+        $(window).scroll(function() {
+          $("main-nav-scrolled").slideDown(900);
+          if( $(this).scrollTop() > 0 ) {
+            
+            mn.addClass(mns);
+            
+          } else {
+            mn.removeClass(mns);
+          }
+    });
+        });
+
+        $(document).ready(function(){
+    $("#flip").scroll(function(){
+        $("#panel").slideDown(800);
+    });
+});
+
+
+</script>
 
 
 </body>

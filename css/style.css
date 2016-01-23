@@ -16,31 +16,31 @@
 
 #nav {
     position: fixed;
-    width: 100%;
+    width: 100%;    
     background: rgba(255,255,255,1);
     -webkit-box-shadow: 0px 0px 20px rgba(44,44,44,.3);
     top:0;
     left:0;
     height: 50px;
-    z-index: 100;
+    z-index: 9999;
 }
 
-#nav #logo {
+/*#nav #logo {
     height: 40px;
     width: 170px;
     position: absolute;
     top: 0;
     bottom:0;
     margin: auto 100px;
-}
+} */
 
-#nav #logo img {
+/*#nav #logo img {
     height: 100%;
     width: 100%;
     
-}
+}*/
 .content {
-    height: 400px;
+    /*height: 400px;*/ /*eniig tavihaar responsive bish bolj bna lee.*/
     width:100%;
     background: white;
     z-index: 2;
@@ -68,7 +68,7 @@
     font-weight: 300;
     margin: 30px 30px;
     line-height: 1.5;
-    text-align: center;
+    text-align: justify;
 }
 article {
  -webkit-flex-grow: 1;
@@ -82,9 +82,12 @@ article {
   background: white;
   margin-bottom: 10px;
   box-sizing: border-box;
+/*  border: solid 1px black;*/
   }
+  
   .content ul {
     padding-left: 80px;
+    padding-right: 30px;
   }
   .content li {
     padding: 0;
@@ -163,3 +166,96 @@ article {
         display: table-cell;
 
 }
+
+
+ /*Menutei holbootoi code*/
+.nav ul {
+        /* first create a flex layout context */    
+        padding: 0px;
+        margin: 0px;
+        /*  background: #000066;*/
+        /* display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;*/
+        list-style-type: none;
+        z-index: 9999;
+        float: right;
+      }
+.nav ul li {
+        /*position: relative;*/
+        display: inline;
+        float: left;
+      }
+.nav li a {
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+      }
+.nav li a:hover {
+        background-color: #00003D;
+        color: white;
+        
+      }
+
+
+      /* When browser become smaller, menu will be changed.*/
+@media all and (max-width:550px) {
+        .nav ul {
+          flex-flow: column wrap;
+        }
+        .nav li a { 
+          text-align: center; 
+          padding: 10px;
+          border-top: 1px solid rgba(255,255,255,0.3); 
+          border-bottom: 1px solid rgba(0,0,0,0.1); 
+        }
+      }
+    header, .main-nav-scrolled {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: #000066;
+/*        opacity: 0.7;
+        filter: alpha(opacity=70);
+*/        color: white;
+        z-index: 9999;
+        
+      }
+    @media all and (max-width: 650px) {
+  .content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  article {
+      -webkit-flex: 1 100%; /100% gedeg ni daraagin div-iig shine line –aas eheluulakhiin tuld/
+  -moz-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  margin-right:00px;
+
+  }
+}
+ #contact {
+    background: #1a334c;
+    color: white;
+
+}
+
+#contact ul li
+{
+    color: white;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+      /* When browser become smaller, menu will be changed.*/
+      /* @media all and (max-width:960px) {
+        .nav ul {
+          justify-content: space-around;
+        }  
+      }*/

@@ -1,0 +1,89 @@
+.nav ul {
+        /* first create a flex layout context */    
+        padding: 0px;
+        margin: 0px;
+        /*  background: #000066;*/
+        /* display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;*/
+        list-style-type: none;
+        z-index: 999;
+        float: right;
+      }
+.nav ul li {
+        /*position: relative;*/
+        display: inline;
+        float: left;
+      }
+.nav li a {
+        display: inline-block;
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        padding: 1em;
+      }
+.nav li a:hover {
+        background-color: #00003D;
+        color: white;
+        
+      }
+
+
+      /* When browser become smaller, menu will be changed.*/
+@media all and (max-width:550px) {
+        .nav ul {
+          flex-flow: column wrap;
+        }
+        .nav li a { 
+          text-align: center; 
+          padding: 10px;
+          border-top: 1px solid rgba(255,255,255,0.3); 
+          border-bottom: 1px solid rgba(0,0,0,0.1); 
+        }
+      }
+    header, .main-nav-scrolled {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: #000066;
+/*        opacity: 0.7;
+        filter: alpha(opacity=70);
+*/        color: white;
+        
+      }
+    @media all and (max-width: 650px) {
+  .content {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  article {
+      -webkit-flex: 1 100%; /100% gedeg ni daraagin div-iig shine line –aas eheluulakhiin tuld/
+  -moz-flex: 1 100%;
+  -ms-flex: 1 100%;
+  flex: 1 100%;
+  margin-right:00px;
+
+  }
+}
+ #contact {
+    background: #1a334c;
+    color: white;
+
+}
+
+#contact ul li
+{
+    color: white;
+    font-size: 0.8em;
+    list-style: none;
+}
+
+      /* When browser become smaller, menu will be changed.*/
+      /* @media all and (max-width:960px) {
+        .nav ul {
+          justify-content: space-around;
+        }  
+      }*/
